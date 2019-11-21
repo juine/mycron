@@ -1,0 +1,55 @@
+2019/11/19 22:31:15 [INFO] game start, userid=1234, age=18
+2019/11/19 22:31:15 [ERROR] game start, error=new errro, userid=1234, age=18
+2019/11/19 22:31:15 [WARNING] game start, userid=2234, age=218
+2019/11/19 22:31:15 [INFO] new
+2019/11/19 22:31:15 [INFO] start
+2019/11/19 22:31:15 [INFO] add, new entry=ID:1 unix:1574173885
+2019/11/19 22:31:25 [INFO] timeout, now=1574173885
+2019/11/19 22:31:25 [INFO] run, entryID=1, nextID=1574173885
+2019/11/19 22:44:10 [INFO] game start, userid=1234, age=18
+2019/11/19 22:44:10 [ERROR] game start, error=new errro, userid=1234, age=18
+2019/11/19 22:44:10 [WARNING] game start, userid=2234, age=218
+2019/11/19 22:44:10 [INFO] new
+2019/11/19 22:44:10 [INFO] start
+2019/11/19 22:44:10 [INFO] add, new entry=ID:1 unix:1574174660
+2019/11/19 22:49:03 [INFO] game start, userid=1234, age=18
+2019/11/19 22:49:03 [ERROR] game start, error=new errro, userid=1234, age=18
+2019/11/19 22:49:03 [WARNING] game start, userid=2234, age=218
+2019/11/19 22:49:03 [INFO] new
+2019/11/19 22:49:03 [INFO] start
+2019/11/19 22:49:03 [INFO] add, new entry=ID:1 unix:1574174953
+2019/11/19 22:49:03 [INFO] add, new entry=ID:2 unix:1574174951
+2019/11/19 22:49:08 [INFO] remove, entryID=2
+2019/11/19 22:49:11 [INFO] timeout, now=1574174951
+2019/11/19 22:49:13 [INFO] timeout, now=1574174953
+2019/11/19 22:49:13 [INFO] run, entryID=1, next=1574174953
+2019/11/20 10:13:57 [INFO] game start, userid=1234, age=18
+2019/11/20 10:13:57 [ERROR] game start, error=new errro, userid=1234, age=18
+2019/11/20 10:13:57 [WARNING] game start, userid=2234, age=218
+2019/11/20 10:13:57 [INFO] new
+2019/11/20 10:13:57 [INFO] start
+2019/11/20 10:13:57 [INFO] add, new entry=ID:1 unix:1574216047
+2019/11/20 10:13:57 [INFO] add, new entry=ID:2 unix:1574216045
+2019/11/20 10:14:02 [INFO] remove, entryID=2
+2019/11/20 10:14:05 [INFO] timeout, now=1574216045
+2019/11/20 10:14:07 [INFO] timeout, now=1574216047
+2019/11/20 10:14:07 [INFO] run, entryID=1, next=1574216047
+2019/11/20 10:14:11 [INFO] stop
+2019/11/20 21:17:40 [ERROR] panic, error=panic error, stack=...
+goroutine 19 [running]:
+mycron.Recover.func1.1.1(0x1182b60, 0xc0000642f0)
+	/Users/juine/go/src/mycron/chain.go:36 +0xb5
+panic(0x111f000, 0x117ed90)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+mycron.TestCron.func1()
+	/Users/juine/go/src/mycron/cron_test.go:70 +0x39
+mycron.FuncJob.Run(0x1161708)
+	/Users/juine/go/src/mycron/cron.go:249 +0x25
+mycron.Recover.func1.1()
+	/Users/juine/go/src/mycron/chain.go:45 +0x7f
+mycron.FuncJob.Run(0xc0000801e0)
+	/Users/juine/go/src/mycron/cron.go:249 +0x25
+mycron.(*Cron).startJob.func1(0xc0000dc000, 0x1181940, 0xc0000801e0)
+	/Users/juine/go/src/mycron/cron.go:136 +0x67
+created by mycron.(*Cron).startJob
+	/Users/juine/go/src/mycron/cron.go:134 +0x70
