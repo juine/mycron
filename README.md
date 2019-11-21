@@ -11,7 +11,7 @@ c.Start()
 // 停止定时器
 c.Stop()
 // 延迟调用函数
-c.CallOut(4, f)
-c.CallFre(4, f)
-c.Daily(12, 5)
-c.Weekly(21, 34, 1)
+c.CallOut(delay, fun)
+c.CallFre(delay, fun)
+c.Daily(hour, min, fun)
+c.Weekly(hour, min, wday, fun)
